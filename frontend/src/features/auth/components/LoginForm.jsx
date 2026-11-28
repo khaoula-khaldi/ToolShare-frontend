@@ -21,9 +21,9 @@ function LoginForm(){
             if(data.user.role === "Admin"){
                 navigate("/admin/dashboard",{replace:true})
             }else if(data.user.role === "Gestionnaire"){
-                navigate("",{replace:true})
+                navigate("/manager/dashboard",{replace:true})
             }else if(data.user.role === "Utilisateur"){
-                navigate("",{replace:true})
+                navigate("/client/dashboard",{replace:true})
             }
             
 
